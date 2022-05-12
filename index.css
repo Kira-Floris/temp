@@ -1,0 +1,122 @@
+body{
+    background-color: rgba(49, 0, 128, 0.87);
+    /* color: white; */
+    padding: 20px;
+    background-image: url(background.svg);
+    background-repeat: no-repeat;
+}
+.topnav{
+    width: 100%;
+    display: flex;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+.topnav a{
+    color: white;
+    font-size: 20px;
+    padding: 25px;
+}
+.topnav .topnavmenu{
+    position: absolute;
+    right: 10px;
+    top: 50px
+}
+.topnav .logo{
+    position: absolute;
+    top: 25px;
+}
+.login{
+    background: white;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 20px;
+    display: inline-block;
+    position: absolute;
+    right: 50px;
+    min-height: 500px;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.login input{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 400px;
+    height: 50px;
+}
+.login .loginbottom{
+    position: absolute;
+    bottom: 20px;
+}
+.login button{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    border: white;
+}
+.login .submit{
+    background: rgba(49, 0, 128, 0.87);
+    color: white;
+}
+.login .submit span{
+    font-size: 15px;
+}
+.topnav .icon{
+    display: none;
+}
+.footercontainer{
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+}
+.footer{
+    display: flex;
+    height: 100px;
+}
+.footer .info{
+    background: blue;
+    width: 50%;
+}
+.footer .chat{
+    background: red;
+    width: 50%;
+}
+
+
+/* media responsiveness */
+@media screen and (max-width: 1000px){
+    .topnav .topnavmenu{
+        display: none;
+    }
+    .topnav .icon{
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        display:inline-block!important;
+    }
+    .topnav .responsive{
+        position: relative;
+    }
+    .topnav .responsive .icon{
+        position: absolute;
+        display: block;
+        right: 0;
+        top: 0;
+    }
+    .topnav .icon button{
+        width: 50px;
+        height: 50px;
+        font-size: 40px;
+        color: white;
+        border-radius: 5px;
+        border: none;
+        background-color: black; 
+    }
+    .topnav .responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}

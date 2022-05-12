@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="topnav" id="topnav">
+      <a href="#logo" class="logo">Dribble</a>
+      <div class="topnavmenu">
+        <a href="#marketplace">MarketPlace</a>
+        <a href="#drops">Drops</a>
+        <a href="#brands">Brands</a>
+        <a href="#lightmode">Light Mode</a>
+        <a href="#login">Login</a>
+        <a href="#signup">Sign Up</a>
+      </div>
+      <a href="javascript:void(0);" class="icon" onClick="responsiveFunction()">
+        <button>=</button>
+      </a>
+    </div>
+    <div class="login">
+      <h1>Welcome Back</h1>
+      <p>Please enter your email and password</p>
+
+      <form action="" method="post">
+        <div>
+          <input type="text" placeholder="Username" name="uname" required />
+        </div>
+        <div>
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            required
+          />
+        </div>
+        <p>
+          By login, you agree to to our
+          <a href="termsandconditions">Terms & Conditions</a>
+        </p>
+        <button class="submit" type="submit">
+          Login... <span> - -></span>
+        </button>
+        <button class="forgetpassword">Forget Password</button>
+      </form>
+      <div class="loginbottom">
+        <hr />
+        <p>Don't have an account yet? <a href="register">Create Account</a></p>
+      </div>
+    </div>
+    <div class="footercontainer">
+      <div class="footer">
+        <div class="chat">chat</div>
+        <div class="info">footer</div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function responsiveFunction() {
+      var x = document.getElementById("topnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+        console.log(x);
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</html>
