@@ -86,7 +86,7 @@ body{
 
 
 /* media responsiveness */
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 800px){
     .topnav .topnavmenu{
         display: none;
     }
@@ -118,5 +118,9 @@ body{
         float: none;
         display: block;
         text-align: left;
+    }
+    .login{
+        right:auto;
+        
     }
 }
